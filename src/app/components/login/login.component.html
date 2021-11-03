@@ -1,0 +1,25 @@
+<div class="body">
+    <div class="login">
+        <div *ngIf='loggedIn()' class="openSession">
+            <h1 >YOU HAVE AN OPEN SESSION</h1>
+            <img class="img-openSession" src="../../../assets/img/happy.png">
+            <button routerLink="/clients" mat-raised-button class="ancho button" color="primary">Enter</button>
+        </div>
+        <form *ngIf='!loggedIn()' [formGroup]="form" (ngSubmit)="login()">           
+            <img src="../../../assets/img/usuario.png" width= "50%" alt="imgUsuario">
+            <h1>Login</h1>
+            
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput autocomplete="off" formControlName="email" type="text">
+            </mat-form-field>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput autocomplete="off" formControlName="password" type="password">
+            </mat-form-field>
+            <button [disabled]="form.invalid" type="submit" mat-raised-button class="ancho button" color="primary">Login</button>
+        </form>
+        <button (click)="signup()" mat-raised-button class="ancho button" color="primary">Singup</button>
+
+    </div>
+</div>

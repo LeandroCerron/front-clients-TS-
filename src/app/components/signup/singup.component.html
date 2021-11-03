@@ -1,0 +1,23 @@
+<div class="body">
+    <div class="singup">
+        <form [formGroup]="form" (ngSubmit)="singup()">
+            <img src="../../../assets/img/register.png" width="30%" alt="">
+            <h1>SingUp</h1>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput autocomplete="off" formControlName="name" type="text">
+            </mat-form-field>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput autocomplete="off" formControlName="email" type="email">
+            </mat-form-field>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput autocomplete="off" formControlName="password" type="password">
+            </mat-form-field>
+            <button [disabled]="form.invalid" type="submit" mat-raised-button class="ancho button" color="primary">SingUp</button>
+            
+        </form>
+        <button  (click)="login()" mat-raised-button class="ancho button" color="primary">Back</button>
+    </div>
+</div>

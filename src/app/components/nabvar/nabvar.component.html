@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>App clients</span>
+      <div *ngIf="loggedIn()" class="container">
+        <button  *ngIf="btnCreateUser == '' " (click)="users()"  mat-raised-button color="primary">Create user</button>
+        <button (click)="logout()" mat-raised-button color="primary">Logout</button>  
+      </div>      
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-progress-bar *ngIf="load" mode="query"></mat-progress-bar>

@@ -1,0 +1,72 @@
+
+.toolbar {
+    margin-bottom: 50px;
+}
+table {
+    width: 95%;
+    margin-left: 25px;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 95%;
+    margin-left: 25px;
+}
+
+.tbl {
+    margin-top: 40px;
+}
+
+.edit {
+    color: rgb(28, 26, 165);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.delete {
+    color: rgb(206, 9, 9);
+    cursor: pointer;
+}
+.example-action-buttons {
+    padding-bottom: 20px;
+  }
+  
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.createClient {
+  margin-top: 50px;
+  margin-left: 25px;
+  width: 95%;
+  display: flex;
+}
+
+button { 
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+
+mat-paginator {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 8px;
+  flex-wrap: wrap-reverse;
+  width: 93.5%;
+  margin-top: 13px;
+  margin-left: 24px;
+  color: black;
+
+}
